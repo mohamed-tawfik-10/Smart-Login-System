@@ -1,0 +1,16 @@
+.containerss{
+    height: 70vh;
+}
+
+.navbar{
+    background: #24353f;
+    color: white;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+
+}
+.navbar-brand{
+    color: white;
+}
+.wwid{
+    width: 50px;
+}

@@ -1,0 +1,24 @@
+body {
+    background: #24353f;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+}
+
+.item {
+
+    background: #24353f;
+    color: #17a2b8;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+#signinEmail{
+
+  color:   #ced4da;
+}
+.inner{
+    width: 90%;
+    margin: auto;
+}
+input::placeholder {
+    color: white;
+    opacity: 0; /* تأكد من ظهور اللون بشكل واضح */
+}

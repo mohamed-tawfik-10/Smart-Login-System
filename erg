@@ -1,0 +1,33 @@
+
+var signupName = document.getElementById('signupName')
+var signupEmail = document.getElementById('signupEmail')
+var signupPassword = document.getElementById('signupPassword')
+var signinEmail = document.getElementById('signinEmail')
+var signinPassword = document.getElementById('signinPassword')
+
+var signupArray = [] ;
+
+if (localStorage.getItem('userinfo') !== null) {
+    signupArray = JSON.parse(localStorage.getItem('users'));
+    signUP()
+}
+
+function signUP(){
+    var signup={
+       name : signupName.value,
+       email : signupEmail.value,
+       pass : signupPassword.value
+    }
+    signupArray.push(signup)
+    localStorage.setItem('users', JSON.stringify(signupArray))
+    empty()
+    console.log(signupArray)
+}
+
+function empty() {
+    if (signupName.value==''  signupEmail.value==''  signupPassword==''){
+        document.getElementById('exist').innerHTML=All inputs is required 
+    }
+    else{
+        document.getElementById('exist').innerHTML=Success}
+}

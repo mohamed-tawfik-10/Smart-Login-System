@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sign.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container my-5 py-5 text-center">
+        <div class="item w-75 py-5 m-auto   ">
+            <h1>Smart Login System</h1>
+            <div class="inner ">
+                <input id="registName"oninput="validateUser(this)"  class="form-control my-3 bg-transparent text-white "
+                placeholder="Enter your Name" type="text">
+                <input id="registEmail" oninput="validateUser(this)"  class="form-control my-3 bg-transparent text-white "
+                    placeholder="Enter your email" type="text">
+                <input id="registPassword" oninput="validateUser(this)"  class="form-control my-3 bg-transparent text-white "
+                    placeholder="Enter your password" type="password">
+                    <div class="d-flex align-items-center justify-content-center">                    
+                        <p class="w-25 bg-danger text-white "  id="success"></p></div>
+                <button onclick="login()" class="btn btn-outline-info w-100 my-3">Sign in</button>
+                <p class="text-white">
+                    Don’t have an account?
+                    <a class="text-white" href="index.html">Login in</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
